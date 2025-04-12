@@ -1,4 +1,4 @@
-import { EthereumProvider } from "@walletconnect/ethereum-provider";
+import { EthereumProvider } from "https://cdn.skypack.dev/@walletconnect/ethereum-provider";
 
 let provider;
 
