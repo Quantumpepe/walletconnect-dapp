@@ -28,10 +28,10 @@ document.getElementById("connectButton").addEventListener("click", () => {
 
 window.addEventListener('load', () => {
   const autoTrigger = new URLSearchParams(window.location.search).get("autoconnect");
-
   if (autoTrigger === "true") {
     const chainId = document.getElementById("chainSelect")?.value || "1";
     connectWallet(chainId);
   }
 });
+
 
