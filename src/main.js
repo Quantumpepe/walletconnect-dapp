@@ -26,11 +26,12 @@ document.getElementById("connectButton").addEventListener("click", () => {
 });
 
 
-window.addEventListener("load", () => {
-  const params = new URLSearchParams(window.location.search);
-  const autoConnect = params.get("autoConnect");
+window.addEventListener('load', () => {
+  const autoTrigger = new URLSearchParams(window.location.search).get("autoconnect");
 
-  if (autoConnect === "true") {
-    document.getElementById("connectButton")?.click();
+  if (autoTrigger === "true") {
+    const chainId = document.getElementById("chainSelect")?.value || "1";
+    connectWallet(chainId);
   }
 });
+
