@@ -24,3 +24,13 @@ document.getElementById("connectButton").addEventListener("click", () => {
   const chainId = document.getElementById("chainSelect").value;
   connectWallet(chainId);
 });
+
+
+window.addEventListener("load", () => {
+  const params = new URLSearchParams(window.location.search);
+  const autoConnect = params.get("autoConnect");
+
+  if (autoConnect === "true") {
+    document.getElementById("connectButton")?.click();
+  }
+});
