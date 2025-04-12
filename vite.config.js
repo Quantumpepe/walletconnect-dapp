@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/vite-test/', // Name deines Repos auf GitHub
+  base: '/walletconnect-dapp/', // 👈 Muss exakt so heißen wie dein GitHub-Repo
 });
