@@ -18,4 +18,14 @@
    <script src="./src/main.js"></script>
 
   </body>
+   <script>
+  window.addEventListener("load", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("autoconnect") === "true") {
+      const btn = document.getElementById("connectButton");
+      if (btn) btn.click();
+    }
+  });
+</script>
+
 </html>
