@@ -1,3 +1,5 @@
+import './style.css';
+
 import { EthereumProvider } from "https://cdn.skypack.dev/@walletconnect/ethereum-provider";
 
 let provider;
