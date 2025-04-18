@@ -1,19 +1,66 @@
 <!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <title>WalletConnect V2 DApp</title>
-    <script type="module" crossorigin src="/walletconnect-dapp/assets/index-tgbtgpFV.js"></script>
-  </head>
-  <body>
-    <h2>Netzwerk auswählen:</h2>
-    <select id="chainSelect">
-      <option value="1">Ethereum (ETH)</option>
-      <option value="56">BNB Chain</option>
-      <option value="137">Polygon</option>
-    </select>
-    <br /><br />
-    <button id="connectButton">Mit WalletConnect verbinden</button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuantumPepe WalletConnect</title>
+  <style>
+    body {
+      background-color: #001100;
+      color: #00ff00;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #00ff00;
+      text-shadow: 0 0 10px #00ff00;
+    }
+    select, button {
+      padding: 1rem;
+      margin: 1rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 12px;
+    }
+    select {
+      background-color: #002200;
+      color: #00ff00;
+    }
+    button {
+      background-color: #00ff00;
+      color: #000000;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00cc00;
+    }
+  </style>
+  <script type="module" crossorigin src="/walletconnect-dapp/assets/index-40wrhZDC.js"></script>
+  <link rel="stylesheet" crossorigin href="/walletconnect-dapp/assets/index-BMQ3d834.css">
+</head>
+<body>
+  <h2>Connect to QPEPE</h2>
+
+  <p>Select Network:</p>
+  <select id="chainSelect">
+    <option value="1">Ethereum Mainnet</option>
+    <option value="137">Polygon</option>
+    <option value="56">Binance Smart Chain</option>
+  </select>
+
+  <br />
+
+  <button id="connectButton">🔌 Connect Wallet</button>
+  <button onclick="buyToken()">💸 Buy QPEPE</button>
+
+  
+<div style="margin-top: 30px;">
+  <label for="cryptoAmount">Enter Amount (in ETH / POL / BNB):</label>
+  <input type="number" id="cryptoAmount" placeholder="e.g. 0.1" step="any">
+  <p id="qpepeResult" style="font-weight: bold; margin-top: 10px;"></p>
+</div>
 
-  </body>
+</body>
 </html>
