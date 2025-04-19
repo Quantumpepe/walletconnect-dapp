@@ -9,7 +9,7 @@ let provider;
 let cachedPriceUSD = null;
 
 const contractAddresses = {
-  1: "0x7E20f6A0306537280BD41B0e5a49c2A021DC8798",     // Ethereum
+  1: "0x7E0A6F03060357828DD41B0e5a49c2A201DC8798",     // Ethereum
   137: "0x57f5e0DDa1ddfdbBa469bCD6b6f90db5dE4ce69A",     // ✅ korrektes Checksum!
   56: "0x7E0A6F03060357828DD41B0e5a49c2A201DC8798"      // BNB
 };
